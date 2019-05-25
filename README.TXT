@@ -1,5 +1,22 @@
 Welcome to You Only Live Once!
 
+_**Note:** I'm not the author of this rogue-like. It was created by Jeff Lait as a 7drl in 2005-2006, all credits go to him.
+This repository was set up merely to preserve a historical artifact and to provide means to build/run it on newer systems.
+Original web page with all the releases can be found [here](http://www.zincland.com/7drl/liveonce/).
+Original binary releases can be found in the [list of releases](https://github.com/clckwrkbdgr/liveonce/releases).
+_
+
+## From original web page:
+
+The features of You Only Live Once are:
+
+* Extremely tactical combat. There is no randomness in combat. You always hit and always do full damage. This means that careful placement is the difference between success and failure.
+* Heavy on plot and characterization. A story is told. It is not just kill things for no reason. (If you want to just kill things for no reason, [POWDER](http://www.zincland.com/powder) is recommended)
+* Quick to complete. You can likely fully explore and enjoy the game in an hour or two. You are then free to get on with your life. 
+
+Have fun! 
+
+
 ===========================
   ABOUT
 ===========================
