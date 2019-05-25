@@ -1,3 +1,14 @@
+enummaker
+support/enummaker/enummaker
+glbdef.cpp
+glbdef.h
+linuxport/alphabet.bmp
+linuxport/liveonce
+linuxport/piecelist.map
+linuxport/text.txt
+linuxport/valley.map
+linuxport/valley.sav
+
 # Prerequisites
 *.d
 

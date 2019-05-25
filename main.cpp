@@ -25,6 +25,9 @@
 #include "item.h"
 #include "quest.h"
 
+#ifndef WIN32
+#include <unistd.h>
+#else
 #include <fstream>
 using namespace std;
 

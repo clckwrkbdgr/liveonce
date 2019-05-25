@@ -47,6 +47,7 @@ int glbWinLUT[8] =
 #include "gfxengine.h"
 #include "gfx_curses.h"
 
+#include <string.h>
 #include <iostream>
 using namespace std;
 
@@ -57,6 +58,8 @@ using namespace std;
 #include <windows.h>
 #define usleep(x) Sleep((x)/1000)
 #define sleep(x) Sleep((x))
+#else
+#include <unistd.h>
 #endif
 
 #include <curses.h>
