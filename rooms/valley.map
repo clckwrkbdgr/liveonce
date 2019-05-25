@@ -1,0 +1,80 @@
+# This is the village valley.
+# This valley map was created by Jeff Lait
+# It is released into the Public Domain
+
++--------------------------------------------------+
+|VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV|
+|VVVVVVVV^^&&&&&&&&&&&^^^     VVVVVVVVVVVVVVVVVVVVV|
+|VVVV^^^^^&&&&&&&&&&&&&^^^^^^^^^^            VVVVVV|
+|V    ^^^&&&&&&&&&&&&&&&&&&&&&&&^^              VVV|
+|V  ^^^&&&&&&&&&&&&&&&&&&&&&&&&&&^                V|
+|VV ^&&&&&&&&&&&&&&&&&&&&&&&&&&&&^^^              V|
+|VV ^&&&&&&&&&&&&&&&&&&&&&&  &&&&&&^^             V|
+|VV ^^^&&&&&&&&&&&&&&&&&&& > &&&&&&&^^            V|
+|VV ^^&&&&&     &&&&&&&&&&&  &&&&&&&&^^^          V|
+|VVVV^ &&& """"""  &&&&&&&&&&&&&&&&&&&&^^^        V|
+|VVVVV^    """"""   &&&&&&&&&&&&&&&&&&&&&^        V|
+|VVVVVV^   """"""    &&& &&&&&&&&&&&&&&&&^        V|
+|VVVVVVV^  """"""     &    &&&&&&&&&&&&&&^^       V|
+|VVVVVVV^  """7""           &&&&&&&&&&&&&&^^^     V|
+|VVVVVV^^  """"""              &&&&&&&&&&&&&^     V|
+|VVVVVV^   #### .                     &&&&&&^     V|
+|VVVVVV^   #,,# .                   &&&&&&&&^     V|
+|VVVVV^^   #,,+....                &&&&&&&&&^^^   V|
+|VVVVV^    ####   .              &&&&&&&&&&&&^^^  V|
+|VVVV^^           .                &&&&&&&&&&&&^^ V|
+|VVV^^            .             """""" &&&&&&&&&^ V|
+|VV^^             ...      #### """"""   &&&&&&&^ V|
+|V^^                .      #,,# "6""""    &&&&&&^ V|
+|V^                 .      #,,+.""""""     &&&&&^ V|
+|^^        ######## .      ####.          &&&&&&^^V|
+|^         #,,+,,,# .          .         &&&~~~~~~V|
+|^      &  #,4#,,5# .          .      ~~~~~&~&&^^^V|
+|V^        ####+### .          .   ~~~~&&&~~~&&^^ V|
+|V^            ................. ~~~  &&&&&&&&^^  V|
+|V^^           .             ~~~~~   &&&&&&&^^^   V|
+|V ^           .    #####   ~~      ....&&^^^^^^VVV|
+|V ^^     &    .    #,,,# ~~~     ...&&..^^^^^^^;;W|
+|V  ^          .    #,,3# ~     ... &&&&..^^...^;VV|
+|V  ^          . 0  ##+## ~   ...    &&&&.^^.^.^;VV|
+|V ^^       ..............=....       &&^..^.^.;;^V|
+|V ^       #+####+#       ~          &&&^^...^^^^^V|
+|V ^       #1!#,,,#   ~~~~~          &&&&^^^^^  ^^V|
+|V^^       ####,,2#   ~~~~~~~~        &&&&^^    ^VV|
+|V^           #,,,#  ~~~~~~~~~~      &&&&&&^    ^VV|
+|^^           #####  ~~~~~~~~~         &&&&^   VVVV|
+|^                    ~~~~~~~           &&^^VVVVVVV|
+|V^                 ~~~~                 ^VVVVVVVVV|
+|VV^        &&&&&&~~~                    ^VVVVVVVVV|
+|VVV^   &&&&&&&&&~~&&&                  ;VVVVVVVVVV|
+|VVVV^&&&&&&&&&~~~&&&&                 ;;VVVVVVVVVV|
+|VVVVV^&&&^^^~~~&&&&&&&&        ;;;   ;;VVVVVVVVVVV|
+|VVVVV^^^^^~~~^&&&&&&&&&      ;;;;^^^^VVVVVVVVVVVVV|
+|VVVVVVV^^^~^^^&&&^^^^^^^    ;;;VVVVVVVVVVVVVVVVVVV|
+|VVVVVVVVVVV^^^^^^VVVVVVV^^^^^VVVVVVVVVVVVVVVVVVVVV|
+|VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV|
++--------------------------------------------------+
+
+0: ( ), Timmy
+1: (,), Kor Smith
+2: (,), Eliza Smith
+3: (,), Elder Krall
+4: (,), Debbie Baker
+5: (,), Rodney Baker
+6: ("), Farmer Amy
+7: ("), Farmer Joe
+=: bridge
+V: icy mountain
+W: snowy pass
+^: mountain
+#: wall
++: door
+.: path
+,: floor
+;: snow covered ground
+ : grass
+&: forest
+": field
+>: downstairs
+~: water
+!: fire

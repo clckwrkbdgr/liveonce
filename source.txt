@@ -1,0 +1,779 @@
+COMMENT
+{
+    This defines our data structures in a more maintainable and
+    readable manner than raw .cpp files.
+}
+
+DEFINE ATTR
+{
+    U8		bg_r		0
+    U8		bg_g		0
+    U8		bg_b		0
+    U8		fg_r		255
+    U8		fg_g		255
+    U8		fg_b		255
+}
+
+ATTR BORDER
+{
+    bg_r		128
+    bg_g		0
+    bg_b		0
+    fg_r		255
+    fg_g		255
+    fg_b		255
+}
+
+ATTR HILITE
+{
+    bg_r		255
+    bg_g		255
+    bg_b		255
+    fg_r		0
+    fg_g		0
+    fg_b		0
+}
+
+ATTR ELECTRICBLUE
+{
+    bg_r		0
+    bg_g		16
+    bg_b		32
+    fg_r		32
+    fg_g		128
+    fg_b		255
+}
+
+ATTR METAL
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		32
+    fg_g		128
+    fg_b		196
+}
+
+ATTR YELLOW
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		255
+    fg_g		255
+    fg_b		0
+}
+
+ATTR PURPLE
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		255
+    fg_g		128
+    fg_b		255
+}
+
+ATTR NORMAL
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		192
+    fg_g		192
+    fg_b		192
+}
+
+ATTR LIGHTBLACK
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		64
+    fg_g		64
+    fg_b		64
+}
+
+ATTR OUTOFFOV
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		96
+    fg_g		96
+    fg_b		96
+}
+
+ATTR WHITE
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		255
+    fg_g		255
+    fg_b		255
+}
+
+ATTR ORANGE
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		255
+    fg_g		192
+    fg_b		64
+}
+
+ATTR BROWN
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		192
+    fg_g		128
+    fg_b		64
+}
+
+ATTR GREEN
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		0
+    fg_g		255
+    fg_b		0
+}
+
+ATTR DKGREEN
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		0
+    fg_g		128
+    fg_b		0
+}
+
+ATTR BLUE
+{
+    bg_r		0
+    bg_g		0
+    bg_b		0
+    fg_r		64
+    fg_g		64
+    fg_b		255
+}
+
+DEFINE TILE
+{
+    U8		symbol		'&'
+    ENM		attr		ATTR		NORMAL
+    CST		legend		"none"
+
+    bool	ispassable	true
+    bool	istransparent	true
+}
+
+TILE INVALID
+{
+    symbol	' '
+    attr	NORMAL
+    legend	"invalid"
+    ispassable		false
+    istransparent	false
+}
+
+TILE FLOOR
+{
+    symbol	'.'
+    attr	NORMAL
+    legend	"floor"
+    ispassable		true
+    istransparent	true
+}
+
+TILE DOWNSTAIRS
+{
+    symbol	'>'
+    attr	WHITE
+    legend	"downstairs"
+    ispassable		true
+    istransparent 	true
+}
+
+TILE UPSTAIRS
+{
+    symbol	'<'
+    attr	WHITE
+    legend	"upstairs"
+    ispassable		true
+    istransparent 	true
+}
+
+TILE SNOWYPATH
+{
+    symbol	'.'
+    attr	WHITE
+    legend	"snow covered ground"
+    ispassable	true
+    istransparent true
+}
+
+TILE PATH
+{
+    symbol	'.'
+    attr	BROWN
+    legend	"path"
+    ispassable		true
+    istransparent	true
+}
+
+TILE GRASS
+{
+    symbol	'.'
+    attr	GREEN
+    legend	"grass"
+    ispassable		true
+    istransparent	true
+}
+
+TILE FIELD
+{
+    symbol	'"'
+    attr	BROWN
+    legend	"field"
+    ispassable		true
+    istransparent	true
+}
+
+TILE FIRE
+{
+    symbol	'&'
+    attr	ORANGE
+    legend	"fire"
+    ispassable	false
+    istransparent true
+}
+
+TILE WALL
+{
+    symbol	'#'
+    attr	NORMAL
+    legend	"wall"
+
+    ispassable		false
+    istransparent	false
+}
+
+TILE DOOR
+{
+    symbol	'+'
+    attr	BROWN
+    legend	"door"
+
+    ispassable		true
+    istransparent	false
+}
+
+TILE MOUNTAIN
+{
+    symbol	'^'
+    attr	NORMAL
+    legend	"mountain"
+    ispassable		false
+    istransparent	false
+}
+
+TILE ICEMOUNTAIN
+{
+    symbol	'^'
+    attr	WHITE
+    legend	"icy mountain"
+    ispassable		false
+    istransparent	false
+}
+
+TILE SNOWYPASS
+{
+    symbol	'W'
+    attr	WHITE
+    legend	"snowy pass"
+    ispassable		false
+    istransparent	false
+}
+
+TILE BRIDGE
+{
+    symbol	'='
+    attr	BROWN
+    legend	"bridge"
+
+    ispassable		true
+    istransparent	true
+}
+
+TILE WATER
+{
+    symbol	'~'
+    attr	BLUE
+    legend	"water"
+    ispassable		false
+    istransparent	true
+}
+
+TILE FOREST
+{
+    symbol	'&'
+    attr	DKGREEN
+    legend	"forest"
+
+    ispassable		true
+    istransparent	false
+}
+
+DEFINE AI
+{
+}
+
+AI NONE
+{
+}
+
+AI HOME
+{
+}
+
+AI CHARGE
+{
+}
+
+AI FLANK
+{
+}
+
+AI RANGE
+{
+}
+
+DEFINE MOB
+{
+    U8		symbol		'@'
+    ENM		attr		ATTR		NORMAL
+
+    CST		name		"generic mob"
+    BOOL	isfriendly	false
+
+    CST		melee_name	"claw"
+    CST		melee_verb	"thwack"
+    U8		melee_damage	1
+
+    CST		range_name	"none"
+    CST		range_verb	"pierce"
+    U8		range_damage	0
+    U8		range_range	0
+    U8		range_symbol	'*'
+    ENM		range_attr	ATTR	NORMAL
+
+    U8		max_hp		1
+
+    U8		depth		0
+
+    ENM		ai		AI		NONE
+
+    BOOL	isslow		false
+    BOOL	isfast		false
+
+    BOOL	quest_shroom	false
+    BOOL	quest_timmy	false
+}
+
+MOB NONE
+{
+    symbol	'!'
+    attr	WHITE
+    name	"program error"
+}
+
+MOB TIMMY
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+
+    ai		HOME
+
+    melee_name	"pocket knife"
+    melee_verb	"stab"
+    melee_damage 2
+
+    range_name	"sling shot"
+    range_verb	"peg"
+    range_damage 1
+    range_range	 4
+    
+    max_hp	5
+
+    name	"Timmy"
+}
+
+MOB SMITH
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+
+    ai		NONE
+
+    melee_name	"forge hammer"
+    melee_verb	"smash"
+    melee_damage	10
+
+    max_hp	30
+
+    name	"Kor Smith"
+
+    quest_timmy	true
+}
+
+MOB MRSSMITH
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+
+    ai		HOME
+
+    melee_name	"stout stick"
+    melee_verb	"thwack"
+    melee_damage	4
+
+    range_name	"darts"
+    range_verb	"pierce"
+    range_range		5
+    range_damage	2
+    range_symbol	'('
+    range_attr		METAL
+
+    max_hp	20
+    
+    name	"Eliza Smith"
+
+    quest_timmy	true
+}
+
+MOB FARMERJOE
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+
+    ai		HOME
+
+    melee_name	"shotgun butt"
+    melee_verb	"club"
+    melee_damage 5
+
+    range_name	"shotgun"
+    range_verb	"shoot"
+    range_damage 20
+    range_range  3
+
+    max_hp	10
+    
+    name	"Farmer Joe"
+
+    quest_shroom	true
+    quest_timmy	true
+}
+
+MOB FARMERAMY
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+
+    ai		HOME
+
+    melee_name	"burning hands spell"
+    melee_verb	"cast burning hands at"
+    melee_damage	6
+
+    range_name	"shock sphere spell"
+    range_verb	"shock"
+    range_damage	3
+    range_range		12
+    range_symbol	'0'
+    range_attr		ELECTRICBLUE
+
+    max_hp	10
+    
+    name	"Farmer Amy"
+
+    quest_shroom	true
+    quest_timmy	true
+}
+
+MOB ELDER
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+    ai		HOME
+
+    melee_name	"acid splash spell"
+    melee_verb	"cast acid splash at"
+    melee_damage	9
+    
+    range_name	"fire ball spell"
+    range_verb	"burn"
+    range_damage	8
+    range_range		8
+
+    range_symbol	'*'
+    range_attr		ORANGE
+    
+    max_hp	25
+    
+    name	"Elder Krall"
+}
+
+MOB BAKER
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+    ai		HOME
+
+    melee_name	"stout knife"
+    melee_verb	"slash"
+    melee_damage	3
+
+    max_hp		10
+
+    name	"Rodney Baker"
+
+    quest_shroom	true
+    quest_timmy	true
+}
+
+MOB MRSBAKER
+{
+    symbol	'@'
+    attr	WHITE
+    isfriendly	true
+    ai		HOME
+
+    melee_name	"rolling pin"
+    melee_verb	"bash"
+    melee_damage	3
+
+    range_name	"thrown rock"
+    range_verb	"hit"
+    range_damage	1
+    range_range		4
+    range_symbol	'*'
+    range_attr		NORMAL
+
+    max_hp		15
+    
+    name	"Debbie Baker"
+
+    quest_shroom	true
+    quest_timmy	true
+}
+
+MOB RAT
+{
+    symbol	'r'
+    attr	BROWN
+
+    ai		CHARGE
+
+    melee_verb	"bite"
+    melee_damage 1
+
+    max_hp	2
+
+    depth	1
+
+    name	"rat"
+}
+
+MOB BAT
+{
+    symbol	'B'
+    attr	BROWN
+
+    ai		FLANK
+
+    melee_verb	"bite"
+    melee_damage 1
+
+    max_hp	1
+
+    depth	1
+
+    isfast	true
+
+    name	"bat"
+}
+
+MOB ZOMBIE
+{
+    symbol	'z'
+    attr	BROWN
+
+    ai		CHARGE
+
+    melee_verb	"claw"
+    melee_damage	2
+    max_hp	4
+
+    isslow	true
+
+    depth	3
+    name	"zombie"
+}
+
+MOB SKELETON
+{
+    symbol	'z'
+    attr	WHITE
+
+    ai		CHARGE
+
+    depth	3
+    melee_verb	"punch"
+    melee_damage	1
+
+    max_hp	6
+    name	"skeleton"
+}
+
+MOB KOBOLD
+{
+    symbol	'k'
+    attr	PURPLE
+
+    ai		RANGE
+
+    depth	4
+    melee_verb	"stab"
+    melee_damage	3
+
+    max_hp	8
+
+    range_verb	"pierce"
+    range_range	4
+    range_damage	1
+    name 	"kobold"
+}
+
+MOB SKELETONCAPTAIN
+{
+    symbol	'Z'
+    attr	WHITE
+
+    ai		RANGE
+
+    depth	6
+    melee_verb	"eviscerate"
+    melee_damage	8
+    
+    max_hp	12
+
+    range_verb	"hit"
+    range_damage	2
+    range_range		5
+
+    name	"skeleton captain"
+}
+
+MOB LARGEZOMBIE
+{
+    symbol	'Z'
+    attr	BROWN
+
+    ai		CHARGE
+
+    depth	6
+    melee_verb	"club"
+    melee_damage	5
+
+    max_hp	10
+
+    isslow	true
+
+    name	"large zombie"
+}
+
+MOB GHOST
+{
+    symbol	'G'
+    attr	LIGHTBLACK
+
+    ai		CHARGE
+
+    depth	5
+    melee_verb	"touch"
+    melee_damage	0
+
+    max_hp	4
+
+    name	"ghost"
+}
+
+MOB TLOSH
+{
+    symbol	'L'
+    attr	WHITE
+
+    ai		RANGE
+
+    depth	0
+    melee_verb	"cast cause serious wounds at"
+    melee_damage	10
+
+    max_hp	20
+
+    range_verb	"poison"
+    range_range		5
+    range_damage	4
+    range_symbol	'*'
+    range_attr		GREEN
+
+    name	"Tlosh the Lich"
+}
+
+MOB ZOMBIETIMMY
+{
+    symbol	'z'
+    attr	YELLOW
+
+    ai		CHARGE
+
+    melee_verb	"claw"
+    melee_damage	2
+    max_hp	4
+
+    depth	0
+
+    isslow	true
+
+    name	"Timmy the zombie"
+}
+
+DEFINE ITEM
+{
+    CST		name		"Si"
+
+    U8		symbol		'&'
+    ENM		attr	ATTR	METAL
+}
+
+ITEM MUSHROOM
+{
+    name	"purple mushroom"
+    symbol	'%'
+    attr	PURPLE
+}

@@ -1,0 +1,22 @@
+Good luck building this!
+
+First, build enummaker from support/enummaker.  This should just be a matter
+of make.
+
+Then put enummaker in your path
+
+Next, run the premake from this directory:
+make premake
+
+This builds the glbdef.cpp and glbdef.h files.
+
+Now, build the actual app with make from this directory.
+
+Finally, copy into the final location these files:
+text.txt
+valley.map
+piecelist.map
+alphabet.bmp
+liveonce
+
+When these are all in the same directory, you can run it with ./liveonce!

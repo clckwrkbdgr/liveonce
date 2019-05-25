@@ -1,0 +1,15 @@
+Screen capture the following characters and save as alphabet.bmp to
+make your own font!
+
+abcdefghij
+klmnopqrst
+uvwxyz    
+ABCDEFGHIJ
+KLMNOPQRST
+UVWXYZ    
+0123456789
+!@#$%^&*()
+=-\',./+_|
+"<>?[]{}`~
+,.<>;:    
+

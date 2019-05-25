@@ -1,0 +1,755 @@
+# This is the database of text commands.
+
+# Welcome commands are sent when you first play
+# as the given character.
+
+# Please do NOT read this!
+# It is full of spoilers, obviously, and likely doesn't make
+# sense read out of order.  There also entries that never occur,
+# and hence I have no idea what I wrote in them.
+
+welcome::Timmy
+    Welcome to You Only Live Once!  Hit '?' for a list of keyboard
+    commands.
+
+    The moutain-top village of Yamanote has had a peaceful existance
+    for as long as you can remember.  Of course, being only ten years
+    old, that is not all that long.
+
+    Spring has finally arrived after a cold winter.  The pass leading
+    out of the village's valley is still blocked with snow, but in the
+    valley itself grass is growing and the days are warmer.
+
+    You are a small boy named Timmy.  You are supposed to be helping
+    your father, the village smith, in the forge.  You have no such
+    plans!  The sun is shining too brightly to waste the day in a
+    dimly lit forge.
+
+    Exploring the spooky forest to the north seems like a lot more
+    fun.
+
+exit::Timmy
+    Uh oh...  The exit is out of reach!  If only you were taller,
+    you'd be able to get out easily!
+
+    Maybe there is another exit from this cave farther in?
+
+fire::Timmy
+    Your mother would never let you out of the house again if you hit
+    someone with your sling shot!
+
+found::Timmy
+    What is that horrible creature?  A horrible undead version of yourself?
+    How is that possible...?
+
+tlosh::Timmy
+    Oh, what do we have here?  A little human child!  I have not made 
+    a child sized zombie in a while.  Why do I not start with you?
+
+win::Timmy
+    As the Lich Tlosh falls to the ground, his minions collapse as well.
+    With little opposition, you are able to get back to the cave entrance.
+    It is not too long before your mother shows up looking for you and helps
+    you climb out.
+
+    At first, the villagers do not believe your stories of the Lich Tlosh,
+    but when they venture into the cave and find the now inert horrors
+    within, they recognize the truth.
+
+    They are so relieved that you saved the world that no one seems to
+    be concerned about you having run away from working on the forge.  If
+    only every scrape were so easy to get out of!
+
+welcome::Rodney Baker
+    You are Rodney Baker.
+
+    Every winter, the snow falls.  Every winter, the single road out
+    of this village is blocked.  Thus, every winter, a large stockpile
+    of food is made to last the cold months.
+
+    This is where your worries have come.  As the husband to the
+    village's baker, you are in charge of maintaining the food
+    storehouse.  Even though the winter was long, careful rationing
+    would have seen everyone well fed until the passes cleared and
+    outside food could be arranged.
+
+    Yesterday, however, in a routine check of the grain supplies, you
+    discovered a grey mould had corrupted the grain!  The village will
+    go very hungry if a way to neutralize this mould isn't found...
+
+exit::Rodney Baker
+    You consider climbing out of the hole, but then realize you cannot
+    face the other villagers without the mushrooms.  You must redeem
+    yourself!  You turn back to the darkness of the cave, willing to
+    face whatever danger you must.
+
+fire::Rodney Baker
+    Seeing someone in the line of your fire, you decide against
+    firing.
+
+found::Rodney Baker
+    Oh no!  That can't be Timmy, can it?  What has happend to turn him into
+    an undead monstrosity?  The elder must be told of this at once!
+
+tlosh::Rodney Baker
+    Ah, you came here for the mushrooms, no doubt?
+
+    I hope you enjoyed the delicious mould I infected your grain with!
+
+win::Rodney Baker
+    You struggle to the surface, gasping for breath.  The bright sun's rays
+    purify the lingering shadow of darkness that seemed to cover you ever
+    since you saw Tlosh die.
+
+    The village is now safe.  Not only is the grain supply secured, but
+    Tlosh is out of commision.  You hope that Farmer Joe considers this
+    to have been a sufficiently difficult quest!
+
+welcome::Debbie Baker
+    You are Debbie Baker.
+
+    Life in this town has been good for you.  The locals appreciate
+    the fine breads you bake.  While the isolation in the winter can
+    be extreme, at least you know your husband does a good job of
+    ensuring there is enough food.
+
+    Your husband, Rodney Baker, has gone missing.  The last you spoke
+    with him he was seeking a solution to the mysterious grey mould
+    that infected the grain stores.  While finding a way to fix the
+    grain would be great, you are more interested in finding your
+    husband.
+
+exit::Debbie Baker
+    You gaze wistfully at the sun shining down the entrance.  The
+    brightness of the day is not for you, however.  You must either
+    find your husband, or find the mushrooms he disappeared seeking!
+
+fire::Debbie Baker
+    It isn't very neighbourly to throw things at people!
+
+found::Debbie Baker
+    Aahhh!!!
+
+    That cannot be Timmy, can it?  But I recognize those clothes, if not
+    the rotted flesh!  Save us all from these horrors!
+
+    Krall must know what to do!
+
+tlosh::Debbie Baker
+    You are here looking for your husband, no doubt?  Do not fear.  You 
+    will be with him soon.  In the next world!
+
+    Muhahahaha!
+
+win::Debbie Baker
+    You have saved the village from Tlosh's evil, but you are still not happy. 
+    What use is saving the village if you could not save your husband?
+
+    Still, life must go on.  You use the reward money from the King to travel
+    to another village where you won't be haunted by these memories.
+
+welcome::Farmer Amy
+    You are Alice Treska.  
+    
+    To the rest of the world, you are referred
+    to in awe as Treska of the Seven Alphabets.  To this small
+    mountain-top community, however, you are known as Farmer Amy.
+
+    For the last five years you have been performing an ethnographic
+    study of the inhabitants.  By blending yourself in as one of the
+    locals, you hope to better understand the average human.  Only
+    then will you have the wisdom to guide them!
+
+    Your studies look like they will have to be put on hold.  The
+    disappearance of the village's bakers must be investigated.
+
+exit::Farmer Amy
+    The mystery of the disappearing Bakers not being yet resolved to
+    your satisfaction, and the lack of curative mushrooms not yet
+    having been gathered, you are unwilling to contemplate a return to
+    the surface just yet.  Further explorations is called for!
+
+fire::Farmer Amy
+    Studies of group dynamics have shown that engaging in pointless
+    violence is detrimental to all.
+
+found::Farmer Amy
+    Odd...  That zombie looks like the village boy Timmy.  It would thus
+    seem that someone hereabouts is engaged in the vile art of necromancy.
+    I should probably inform the Elder and allow him to deal with whatever
+    evil is behind this.  I must maintain the illusion I am but a simple
+    farmer, after all.
+
+tlosh::Farmer Amy
+    So, Treska of the Seven Alphabets!  We meet again!
+
+    This time you will not escape!  Grovel for me, and I may agree to leave
+    your corpse to rest in peace.
+
+win::Farmer Amy
+    Ha!  That Tlosh proved no match for your skilled magics.
+
+    This shall be a fun tale to tell when you return to the capital.  In the
+    meantime, you need to come up with a convincing explanation of why a simple
+    farmer was able to best the dread Lich Tlosh...
+
+welcome::Farmer Joe
+    You are Farmer Joe.  
+    
+    You grew up in this village, and you'll be
+    damned before someone's carelessness costs you your food supply.
+    People all get themselves up and lost?  Well - you can find them!
+    You and your trusty shotgun, that is.
+
+    First, a couple sips of the ole liquid courage.  That's it.  Time
+    to kick some ass!
+
+exit::Farmer Joe
+    What?  Quit now?  Why not?  What do you owe them - a fool could
+    get their neck broke in this dark dungeon...
+
+    *sip*
+
+    Nevermind that cowardly talk.  These critters haven't seen the
+    half of good ole Joe yet!
+
+fire::Farmer Joe
+    You may be almost blind drunk, but that doesn't make you
+    irresponsible!  Well, at least not *that* irresponsible.
+
+found::Farmer Joe
+    What?  That is a sight to sober me up!  I cannot believe it - poor Timmy
+    - transformed into a zombie?  Is this the fate that awaits us all?
+
+    I had better get the Elder involved - he's got more firepower than I do.
+
+tlosh::Farmer Joe
+    I am looking forward to embalming your corpse.  With all that you
+    have drunk, I believe I can save a bundle on embalming fluids.
+
+    Now do be so kind as to die in mostly one piece?
+
+win::Farmer Joe
+    As you step over Tlosh's smouldering corpse, you reflect on the wisdom
+    of sobriety.  Maybe if you had not been drinking, you would have seen
+    village person after village person disappear into this hell hole
+    to never return?
+
+    Maybe if you acted sooner, fewer lives would have been lost?
+
+    In any case, it isn't every day you get to kill a lich.  That certainly
+    calls for a drink!
+
+welcome::Eliza Smith
+    You are Eliza Smith, the wife of the village smith.
+
+    Your son, Timmy, has been missing for a considerable time.  At
+    first, you discounted it as him shirking his duties.  It would not
+    be the first time he'd rather play in the forest than help his
+    father stoke the fire.  Still, the days are still short, and the
+    woods not a safe place to be at night.
+
+    You have made up your mind.  You must leave your chores aside and
+    find Timmy.
+
+exit::Eliza Smith
+    You look at the bright sun filtered through the bracken strewn
+    cover of the cave.  Such pleasures, you solemnly vow, will not be
+    yours until you have found the whereabouts of your lost son,
+    Timmy.
+
+fire::Eliza Smith
+    It would set a poor example to the children if adults are seen
+    throwing things at each other.
+
+found::Eliza Smith
+    Noooo!  Not my son!
+
+    What cruel world could do this?  It is bad enough to learn he is dead,
+    but to see him ambling about in some horrific semblence of life?
+
+    This is more than I can bear!
+
+tlosh::Eliza Smith
+    Ah, the maternal instinct runs strong, bringing you into my cave after
+    your lost son.  Do not worry, your son is quite fine.  He makes quite
+    the nice zombie specimen, if I do say so for myself.
+
+win::Eliza Smith
+    It is with a cold heart you return to the surface world.  Vengence does
+    not bring back the loved ones that one has lost.  Why must good people
+    die to stop evil?
+
+welcome::Kor Smith
+    You are Kor Smith, the village smith.
+
+    Your son, Timmy, has been missing for much too long.  Your wife
+    went off looking for him, but has not returned.  You feel bad
+    because it should have been you that went looking.  Is that not a
+    father's duty?
+
+    You, however, have a fear of rats, and just knew Timmy would be
+    playing somewhere that they are plentiful.
+
+    You put down your forgework and brace yourself.  You *will* find
+    Timmy.  What sort of father would abandon his son in face of rats?
+
+    Maybe Elder Krall will have some idea what to do?
+
+exit::Kor Smith
+    You gaze longingly at the exit.  A beautiful, rat free, world lies
+    out there.  But!  It is not for you!
+
+    You will find Timmy or die in the attempt.  No mere rat will stop
+    you.
+
+fire::Kor Smith
+    Your father taught you never to aim weapons at people, and you
+    hope to teach that to your son.  The best way to teach is by
+    example
+
+found::Kor Smith
+    Timmy?  Is that you?
+
+    What happened?
+
+    What force did this thing to you?
+
+    I must contact the elder at once!
+
+tlosh::Kor Smith
+    I am a powerful necromancer, and you are but a village blacksmith who is
+    afraid of rats.  Why then should I be afraid of you?
+
+    Come!  Do your worst!
+
+win::Kor Smith
+    The mangled corpse of Tlosh lies at your feet.  You breathe heavily,
+    scanning about for more combatants.  The other undead seem to have
+    lost whatever evil force drove them - they lie now in immobile heaps.
+
+    The village elder must be told about this evil Lich!
+
+welcome::Elder Krall
+    You are the Village Elder, Krall.  
+    
+    You have always taken your role
+    as the Village Elder seriously.  When you realized the task would
+    fall on you, you went to the Capital to learn what the previous
+    Elder could not teach.
+
+    This latest problem may be beyond your skills, however.  What
+    seemed to be a simple fungal infection of the grain stores seems
+    to instead have been a deliberate subterfuge!  Some evil force
+    wanted to lead the townspeople into the forest cave and your best
+    intentions led you to be their pawn.
+
+    This evil must be defeated.  If it is allowed to fester until the
+    passes clear, it could grow too powerful to be contained.
+
+exit::Elder Krall
+    The surface world does not interest you until you have eliminated
+    the source of evil.  The first merchants of summer must not fall
+    into the hands of this cruel force.
+
+fire::Elder Krall
+    You do not need to be an Elder to know that casting spells at
+    people is wrong.
+
+found::Elder Krall
+    This is bad as I fear.  The evil necromancer has raised poor Timmy
+    into a horrible blasphemy of life.  I shall avenge you, Timmy!
+
+tlosh::Elder Krall
+    So, Krall, you at least venture into the cave seeking the evil that lurks.
+    Seek no farther, for you have found it: I, Tlosh the Lich, shall soon
+    conquer the world.
+
+    And all that stands in my way is you.  It is fortunate for me that you
+    are such a weakling.
+
+win::Elder Krall
+    At last, the evil of the cave has been vanquished!
+
+    Life, or what remains of it, can return to normal in the mountaintop
+    village.  You hope the King will forgive you for the losses that
+    your village sustained.
+
+    If only you had realized sooner the evil that had lurked.  If only you
+    had not played the puppet of Tlosh and led people to his cave!
+
+    Ah, regrets are easy to come by.  Victory is harder.  One must savour it
+    when one can.
+
+# Chat commands have the format:
+# chat::talker::talkee
+
+chat::Timmy::Kor Smith
+    Ah, there you are boy!  Help me stoke this fire!
+
+chat::Timmy::Eliza Smith
+    Your father is at the forge waiting for you!  Stop dawdling and
+    help him!
+
+chat::Timmy::Debbie Baker
+    Sorry Timmy, no cookies yet!  We have to wait for the pass to
+    clear first.
+
+chat::Timmy::Rodney Baker
+    *Rodney looks worried*
+
+    Timmy?  Don't worry.  Everything will work out.  Not that there is
+    anything wrong!
+
+chat::Timmy::Farmer Amy
+    Remember Tim, snow in winter means water in spring!  The grain
+    should have enough water for a good harvest this summer.  However,
+    be careful around the streams!  We never know when there may be a
+    flash flood.
+
+chat::Timmy::Farmer Joe
+    D'ya reckon we'll have a scorcher like last summer?  After this
+    winter, I'd certainly like some heat.  Hey!  Careful where yar
+    stepping!  I just mulched that area.
+
+chat::Timmy::Elder Krall
+    Ah, Timmy...  Are you not supposed to be at the forge today?
+
+chat::Rodney Baker::Timmy
+    *Timmy looks more dirty than usual, if that is possible*
+
+    Mr. Baker?  Whatever you do, keep out of the forest!
+
+chat::Rodney Baker::Debbie Baker
+    Perhaps the Elder would know something of this mould?  I certainly
+    have never heard of the like before.  And I certainly can't use
+    the grain as is!
+
+chat::Rodney Baker::Farmer Joe
+    Ya say the grain be ruined?  The grain I grew with my own blood
+    and tears?  Why, I wonder why I stockpile the grain with you in
+    the first place.
+
+chat::Rodney Baker::Farmer Amy
+    This is most tragic news!  Do not blame yourself.  I know you have
+    been most careful in keeping the grain dry.  We must get to the
+    bottom of this, however.  While I'm sure we can survive this
+    season on short rations, imagine if this blight had struck
+    earlier?
+
+chat::Rodney Baker::Kor Smith
+    By the anvil, Rod!  Surely you know by now that I stick to my
+    craft?  I know steel, you know grain.
+
+    Have you seen my boy, however?  He was supposed to help me stoke
+    the fire.  I suspect he's off playing somewhere - if you find him,
+    send him back post haste!
+
+chat::Rodney Baker::Eliza Smith
+    Forget the grain!  Have you seen Timmy?  I'm beginning to worry
+    about him...  I know he's run off before, but this feels different
+    somehow...
+
+chat::Rodney Baker::Elder Krall
+    *Krall takes a sample of the grain and tastes it*
+
+    Urk!
+
+    That is vile!  I have heard of this dread mould.  It is the
+    infamous Bile Mould whose bitter taste offends all but the most
+    insensitive palate.  
+    
+    Fortunately, I believe a local mushroom exists that will
+    neutralize the taste.  Try looking in the cave in the forest to
+    the north - I remember seeing them there.  The mushroom has a pure
+    purple cap with smooth white stalk.  
+    
+    If you can find five of them, we should have enough to restore our
+    remaining grain supplies.
+
+chat::Debbie Baker::Timmy
+    The forest!  No!  Not the forest!  ARGHH!
+
+chat::Debbie Baker::Rodney Baker
+    I'm a zombie!  I'll eat your braaaiinnss!!
+
+chat::Debbie Baker::Kor Smith
+    Old Rod?  Yah, I've seen him moping about looking for a solutin to
+    that grain business.  I figure the Elder would know more than I.
+    I've been working in the forge.  Likely be working all day if
+    Timmy doesn't show up soon.
+
+chat::Debbie Baker::Eliza Smith
+    Rodney never came back from his search?  Very worrying.  Timmy is
+    also missing.  I hope they are both all right.
+
+chat::Debbie Baker::Farmer Joe
+    It surprises me not that Rod got himself lost.  Fool ruins the
+    grain and then expects us to go pulling him out of his jam?  I'll
+    be sitting here with my bottle.
+
+    *hic*
+
+chat::Debbie Baker::Farmer Amy
+    I think Rodney took the loss of the grain very personally.  He no
+    doubt won't return until he finds whatever will fix the problem.
+    You should bring him back before it gets dark.
+
+chat::Debbie Baker::Elder Krall
+    Why, yes, Rodney did tell me of the mould.  It is the vicous Bile
+    Mould, but fortunately easily neutralized with a local mushroom.
+
+    I sent him to the northern woods to fetch five of the mushrooms.
+    You will likely find him in the caves there.
+
+chat::Farmer Amy::Timmy
+    Forest.... Forresst!!!  FOORREESTT!
+
+chat::Farmer Amy::Rodney Baker
+    I'm dead!  Leave me alone!
+
+chat::Farmer Amy::Debbie Baker
+    I know your secret.  You created the headlesses, didn't you?  And
+    you are here, not to study, but atone!  It's a good thing this
+    story is out of canon, or my leak would be a big problem.
+
+chat::Farmer Amy::Farmer Joe
+       *hic*
+     So both the bakers have up and vanished, eh?  
+       *hic*
+     I think I'll just up and vanish this here bottle.   
+
+chat::Farmer Amy::Kor Smith
+    Why, hello ma'am!  It is nice to see you here in town.  Odd
+    business the Baker's vanishing like that?
+
+    I'd go ask the Elder whats-what, but I have iron working to do.
+
+chat::Farmer Amy::Eliza Smith
+    Can no one in this village keep still?  The days are not so long
+    yet that people should be going for such long walks.
+
+    Timmy still hasn't returned.  Drag him back by the ear if you see
+    him!
+
+chat::Farmer Amy::Elder Krall
+    Both of the Baker's went off to look for the mushrooms in the
+    forest to the north.  They should be there looking, I'd suspect
+    they just haven't found any yet.
+
+    The mushrooms have purple tops and smooth white stalks.  Bring
+    back five if you can.
+
+chat::Farmer Joe::Timmy
+    Hey Mr. Joe?  Can I have some of that sweet space juice you be
+    drinking?
+
+chat::Farmer Joe::Rodney Baker
+    You're juiced up again Joe?  Be careful where you aim that shotgun
+    your you're liable to kill someone again.
+
+chat::Farmer Joe::Debbie Baker
+    If I weren't dead and turned into a zombie, I'd be worried about a
+    drunk waving a shotgun around.
+
+chat::Farmer Joe::Farmer Amy
+    I find it most curious how you are able to successfully grow food
+    every year despite being a good for nothing wretch?  Does this
+    mean good for nothing wretches have a place in society?  How
+    peculiar...  I must think on this.
+
+chat::Farmer Joe::Kor Smith
+    Blimey, Joe, keep well back from the fire!  Your breath is liable
+    to ignite!
+
+    Go see the Elder, he'll know the solution to this.
+
+chat::Farmer Joe::Eliza Smith
+    Keep away from my house until you sober up!  The example you set!
+    Have you no sense of shame?
+
+chat::Farmer Joe::Elder Krall
+    Indeed, I see.  It is to the woods to the north that you should
+    go.  No!  North is the other way!
+
+chat::Eliza Smith::Timmy
+    Mother!  It was so scary...  I went into the woods, where I wasn't
+    supposed to.  Then I died, 'cause the game designer is evil and
+    didn't make it possible for me to live, no matter how hard I
+    fought!
+
+    Why would he do that?  Why?
+
+chat::Eliza Smith::Rodney Baker
+    Timmy?  No, I didn't see any sign of him.  I didn't explore all of
+    the cave though, just enough to find the mushrooms we needed.
+
+chat::Eliza Smith::Debbie Baker
+    Ach, how you must worry!  Timmy is such a sweet child.  I trust he
+    is quite fine.  Likely got himself lost in the forest and be glad
+    to see you.  Fortunately, us being bounded by mountains and all,
+    he can't have gone far.
+
+chat::Eliza Smith::Farmer Amy
+    Why, I understand full well the maternal concerns over a lost
+    child.  I have long studied such issues.  The world would be
+    better if the love of a mother for a child could be somehow
+    distilled and applied as a potion to the temperments of those
+    ill-favoured morally.
+
+    I know Timmy often plays in the woods north of here.  I would
+    suggest looking there.
+
+chat::Eliza Smith::Farmer Joe
+    Why, Timmy?  He no doubt is hiding from the likes of you!  Knows
+    you are to put him to work, I wager!  Can't say I blame the lad.
+    I'd hide if I knew someone was seeking to lock me up in a forge
+    all day!
+
+    Go back to your home and relax.  I'm sure he'll be back by
+    nightfall.
+
+chat::Eliza Smith::Kor Smith
+    No, Timmy ran off as soon as he thought I noticed him.  Maybe the
+    elder...
+
+    ...
+
+    What?  Stop crying to the Elder for everything?
+
+    ...
+
+    No, it is *not* because I'm afraid of rats!
+
+    ...
+
+    Very well - you find the danged boy!
+
+chat::Eliza Smith::Elder Krall
+    Ah, the wildness of youth!  I'm sure Timmy is just climbing the
+    trees in the woods.  It is a fine day, after all.    
+
+chat::Kor Smith::Timmy
+    Ah, father!  I am so sorry I forced you to venture into a rat
+    infested cave!
+
+    If only the player playing me was not so incompetent as to get me
+    killed!  I could have beaten that lich!  Why did I have to die?
+    Why!
+
+chat::Kor Smith::Rodney Baker
+    What a surprise!  Kor out of the forge!
+
+    I last saw your wife heading into the woods.  I suspect she is
+    still searching there, as I have not seen her return.  I didn't
+    see him in my mushroom quest, but it was a big cave.  Be careful,
+    I saw RATS there!
+
+    Ha!  What a reaction!
+
+chat::Kor Smith::Debbie Baker
+    Ah, poor Timmy!  I'd go help, but I'm busy with the grain.  The
+    village has to eat, after all.
+
+chat::Kor Smith::Farmer Amy
+    Truly it is worrying that Timmy has not returned.  I tend to
+    resort to quiet contemplation to resolve these sorts of problems.
+    I can understand that you'd be a man of action, however!  Working
+    with metal must teach you to strike fast and without hesitation.
+
+    Let me not delay you any longer.
+
+chat::Kor Smith::Farmer Joe
+    What ya bothering me for?  Surely your precious village elder can
+    set things straight?  Or has Krall gone senile since you last
+    spouted his praises?
+
+chat::Kor Smith::Eliza Smith
+    Why you blasted good for nothing husband!  Letting me go off and
+    be zombiefied!  I hope you at least got over your fear of rats.
+
+    (Editors Note: Don't expect text which is never said to make
+    sense.)
+
+chat::Kor Smith::Elder Krall
+    Kor, my dear child!  You really must start to think for yourself.
+    No need to come to me for every question.  And no need to send the
+    townspeople after me with every problem!  Think: Where was your
+    wife going when you last saw here?
+
+    Aha, there you go - the answer - and requiring not my aid!
+
+chat::Elder Krall::Timmy
+    Is it true you have a secret love triangle with Debbie Baker and
+    Farmer Amy?
+
+chat::Elder Krall::Rodney Baker
+    Thank you for pointing me in the direction of those mushrooms!
+    The grain is saved.  Hopefully Farmer Joe will still be willing to
+    store grain communally again next year...
+
+chat::Elder Krall::Debbie Baker
+    Those mushrooms did the trick, Elder!  The bread baked from the
+    purified grain has no trace of that horrid taste.
+
+chat::Elder Krall::Farmer Amy
+    Me just simple farmer.  Me no comprehend your wise words.
+
+chat::Elder Krall::Farmer Joe
+    Ah, Krall, good to see ya come by!  The cider from last summer has
+    hardened nicely, if I don't say so for myself!  We must sit back
+    and sip it one of these days...
+
+chat::Elder Krall::Eliza Smith
+    Please, elder!  What has happened is too horrible for words.  I
+    cannot sleep thinking of what has happend to poor Timmy...
+
+chat::Elder Krall::Kor Smith
+    These are dark times, Elder.  I look to you for guidance as to
+    what we should do?
+
+# Game commands are the general overall commands.
+game::help
+    Movement is done with the number pad or with vi style keys.  Make
+    sure your numlock is turned on!
+
+        7 8 9  y k u
+         \|/    \|/
+        4-*-6  h-*-l
+         /|\    /|\
+        1 2 3  b j n
+
+    To chat with someone, bump into them.  To attack someone in melee,
+    bump into them.  
+    
+     Quick Keys:
+       a - About LiveOnce
+       c - Character sheet
+       f - Fire ranged weapon
+       Q - Quit and Save
+       w - Welcome message
+       x - Look around
+       ? - This help
+
+game::lose
+    With your death the hopes of the village have ended.  When the
+    snowy pass clears in the summer, the first traders will have a
+    grisly sight.  Another mountain top village has turned into a
+    ghost town.  Too late will the King realize the threat that this
+    entails.  Soon the Lich Tlosh will rule the entire world!
+
+    Better luck with your next village!
+
+game::about
+    You Only Live Once is a Seven Day Roguelike written by Jeff Lait.
+
+    It's home on the web can be found at:
+    http://www.zincland.com/7drl/liveonce
+
+    It uses Simple DirectMedia Layer libraries to display to the
+    screen, whose home can be found at: http://www.libsdl.org/
+
+    Questions and comments can be posted to rec.games.roguelike.misc
+    on USENET, or directly to the author at jmlait at zincland dot com.
+
+    Have fun!
