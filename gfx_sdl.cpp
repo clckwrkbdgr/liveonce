@@ -97,6 +97,28 @@ gfxsdl_cookkey(int unicode, int sdlkey)
 
     switch (sdlkey)
     {
+	// Insert several curses here...  This isn't necessary
+	// anywhere except WIndows XP it seems...
+	case SDLK_KP0:
+	    return '0';
+	case SDLK_KP1:
+	    return '1';
+	case SDLK_KP2:
+	    return '2';
+	case SDLK_KP3:
+	    return '3';
+	case SDLK_KP4:
+	    return '4';
+	case SDLK_KP5:
+	    return '5';
+	case SDLK_KP6:
+	    return '6';
+	case SDLK_KP7:
+	    return '7';
+	case SDLK_KP8:
+	    return '8';
+	case SDLK_KP9:
+	    return '9';
 	case SDLK_UP:
 	    return GFX_KEYUP;
 	case SDLK_DOWN:
@@ -171,6 +193,7 @@ gfxsdl_init()
     {
 	cerr << "Video init failed." << endl;
 	SDL_Quit();
+	exit(-1);
     }
 
     gfxsdl_initfont();
@@ -182,7 +205,10 @@ gfxsdl_init()
     if (!glbVideoSurface)
     {
 	cerr << "Failed to acquire video surface." << endl;
+	cerr << "Attempted resolution was " << (SCR_WIDTH * glbFontWidth) << " by " << (SCR_HEIGHT * glbFontHeight) << endl;
+	cerr << "SDL Error is: " << SDL_GetError() << endl;
 	SDL_Quit();
+	exit(-1);
     }
 
     SDL_WM_SetCaption("Live Once", 0);

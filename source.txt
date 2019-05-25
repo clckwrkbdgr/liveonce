@@ -4,6 +4,19 @@ COMMENT
     readable manner than raw .cpp files.
 }
 
+DEFINE COLOR
+{
+}
+
+COLOR BLACK
+COLOR RED
+COLOR GREEN
+COLOR YELLOW
+COLOR BLUE
+COLOR MAGENTA
+COLOR CYAN
+COLOR WHITE
+
 DEFINE ATTR
 {
     U8		bg_r		0
@@ -12,6 +25,14 @@ DEFINE ATTR
     U8		fg_r		255
     U8		fg_g		255
     U8		fg_b		255
+
+    ENM		fore		COLOR	WHITE
+    ENM		back		COLOR	BLACK
+    bool	bold		false
+}
+
+ATTR NONE
+{
 }
 
 ATTR BORDER
@@ -22,6 +43,10 @@ ATTR BORDER
     fg_r		255
     fg_g		255
     fg_b		255
+
+    fore		WHITE
+    back		RED
+    bold		false
 }
 
 ATTR HILITE
@@ -32,6 +57,10 @@ ATTR HILITE
     fg_r		0
     fg_g		0
     fg_b		0
+
+    fore		BLACK
+    back		WHITE
+    bold		false
 }
 
 ATTR ELECTRICBLUE
@@ -42,6 +71,10 @@ ATTR ELECTRICBLUE
     fg_r		32
     fg_g		128
     fg_b		255
+
+    fore		CYAN
+    back		BLACK
+    bold		true
 }
 
 ATTR METAL
@@ -52,6 +85,10 @@ ATTR METAL
     fg_r		32
     fg_g		128
     fg_b		196
+
+    fore		CYAN
+    back		BLACK
+    bold		false
 }
 
 ATTR YELLOW
@@ -62,6 +99,10 @@ ATTR YELLOW
     fg_r		255
     fg_g		255
     fg_b		0
+
+    fore		YELLOW
+    back		BLACK
+    bold		true
 }
 
 ATTR PURPLE
@@ -72,6 +113,10 @@ ATTR PURPLE
     fg_r		255
     fg_g		128
     fg_b		255
+
+    fore		MAGENTA
+    back		BLACK
+    bold		true
 }
 
 ATTR NORMAL
@@ -82,6 +127,10 @@ ATTR NORMAL
     fg_r		192
     fg_g		192
     fg_b		192
+
+    fore		WHITE
+    back		BLACK
+    bold		false
 }
 
 ATTR LIGHTBLACK
@@ -92,6 +141,10 @@ ATTR LIGHTBLACK
     fg_r		64
     fg_g		64
     fg_b		64
+
+    fore		BLACK
+    back		BLACK
+    bold		true
 }
 
 ATTR OUTOFFOV
@@ -102,6 +155,10 @@ ATTR OUTOFFOV
     fg_r		96
     fg_g		96
     fg_b		96
+
+    fore		BLACK
+    back		BLACK
+    bold		true
 }
 
 ATTR WHITE
@@ -112,6 +169,10 @@ ATTR WHITE
     fg_r		255
     fg_g		255
     fg_b		255
+
+    fore		WHITE
+    back		BLACK
+    bold		true
 }
 
 ATTR ORANGE
@@ -122,6 +183,10 @@ ATTR ORANGE
     fg_r		255
     fg_g		192
     fg_b		64
+
+    fore		RED
+    back		BLACK
+    bold		false
 }
 
 ATTR BROWN
@@ -132,6 +197,10 @@ ATTR BROWN
     fg_r		192
     fg_g		128
     fg_b		64
+
+    fore		YELLOW
+    back		BLACK
+    bold		false
 }
 
 ATTR GREEN
@@ -142,6 +211,10 @@ ATTR GREEN
     fg_r		0
     fg_g		255
     fg_b		0
+
+    fore		GREEN
+    back		BLACK
+    bold		true
 }
 
 ATTR DKGREEN
@@ -152,6 +225,10 @@ ATTR DKGREEN
     fg_r		0
     fg_g		128
     fg_b		0
+
+    fore		GREEN
+    back		BLACK
+    bold		false
 }
 
 ATTR BLUE
@@ -162,6 +239,10 @@ ATTR BLUE
     fg_r		64
     fg_g		64
     fg_b		255
+
+    fore		BLUE
+    back		BLACK
+    bold		true
 }
 
 DEFINE TILE
@@ -339,6 +420,10 @@ AI NONE
 {
 }
 
+AI STAYHOME
+{
+}
+
 AI HOME
 {
 }
@@ -422,7 +507,7 @@ MOB SMITH
     attr	WHITE
     isfriendly	true
 
-    ai		NONE
+    ai		STAYHOME
 
     melee_name	"forge hammer"
     melee_verb	"smash"

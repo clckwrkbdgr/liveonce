@@ -549,6 +549,14 @@ MAP::setDownMap(MAP *down)
     myDownMap = down;
 }
 
+void
+MAP::setUpMap(MAP *up)
+{
+    assert(!myUpMap);
+
+    myUpMap = up;
+}
+
 bool
 MAP::findTile(TILE_NAMES tile, int &mx, int &my, bool avoidmob) const
 {

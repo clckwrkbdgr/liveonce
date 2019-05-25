@@ -91,6 +91,7 @@ public:
 
     // Used for loading...
     void	 setDownMap(MAP *down);
+    void	 setUpMap(MAP *down);
     MAP		*getRawDownMap() const { return myDownMap; }
     MAP		*getRawUpMap() const { return myDownMap; }
 

@@ -77,6 +77,7 @@ extern const MOB_DEF glb_mobdefs[];
 enum AI_NAMES
 {
     AI_NONE,
+    AI_STAYHOME,
     AI_HOME,
     AI_CHARGE,
     AI_FLANK,
@@ -121,6 +122,7 @@ extern const TILE_DEF glb_tiledefs[];
 // Definitions for ATTR
 enum ATTR_NAMES
 {
+    ATTR_NONE,
     ATTR_BORDER,
     ATTR_HILITE,
     ATTR_ELECTRICBLUE,
@@ -147,7 +149,24 @@ struct ATTR_DEF
     u8 fg_r;
     u8 fg_g;
     u8 fg_b;
+    u8 fore;
+    u8 back;
+    bool bold;
 };
 
 extern const ATTR_DEF glb_attrdefs[];
+
+// Definitions for COLOR
+enum COLOR_NAMES
+{
+    COLOR_BLACK,
+    COLOR_RED,
+    COLOR_GREEN,
+    COLOR_YELLOW,
+    COLOR_BLUE,
+    COLOR_MAGENTA,
+    COLOR_CYAN,
+    COLOR_WHITE,
+    NUM_COLORS
+};
 #endif

@@ -108,7 +108,10 @@ load_stuff()
 	map->load(is);
 
 	if (lastmap)
+	{
 	    lastmap->setDownMap(map);
+	    map->setUpMap(lastmap);
+	}
 	else
 	    MAP::setMainMap(map);
 

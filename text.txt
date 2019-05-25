@@ -710,18 +710,16 @@ chat::Elder Krall::Kor Smith
 
 # Game commands are the general overall commands.
 game::help
-    Movement is done with the number pad or with vi style keys.  Make
-    sure your numlock is turned on!
-
+    Movement is done with the number pad or with vi style keys.  You 
+    can also use the cursor keys for four way movement.
         7 8 9  y k u
          \|/    \|/
-        4-*-6  h-*-l
+        4-5-6  h-.-l
          /|\    /|\
         1 2 3  b j n
 
     To chat with someone, bump into them.  To attack someone in melee,
     bump into them.  
-    
      Quick Keys:
        a - About LiveOnce
        c - Character sheet
@@ -730,6 +728,7 @@ game::help
        w - Welcome message
        x - Look around
        ? - This help
+       >, < - Climb staircase
 
 game::lose
     With your death the hopes of the village have ended.  When the

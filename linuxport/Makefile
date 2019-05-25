@@ -2,6 +2,7 @@ TARGET = liveonce
 
 OFILES = linuxport.o \
 	 ../gfxengine.o \
+	 ../gfx_curses.o \
 	 ../gfx_sdl.o \
 	 ../grammar.o \
 	 ../item.o \
@@ -21,7 +22,7 @@ OFILES = linuxport.o \
 all: $(TARGET)
 
 $(TARGET): $(OFILES)
-	g++ -O3 -o $(TARGET) $(OFILES) `sdl-config --libs`
+	g++ -O3 -o $(TARGET) $(OFILES) `sdl-config --libs` -lcurses
 
 clean:
 	rm -f *.o

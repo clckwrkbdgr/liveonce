@@ -355,6 +355,14 @@ MOB::aiDoAI()
 	    // Just stay put!
 	    return true;
 
+	case AI_STAYHOME:
+	    // If we are at home stay put.
+	    if (getX() == myHX && getY() == myHY)
+		return true;
+
+	    // Otherwise, go home.
+	    // FALL THROUGH
+
 	case AI_HOME:
 	    // Move towards our home square.
 	    int		dist;

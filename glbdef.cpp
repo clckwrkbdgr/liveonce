@@ -79,7 +79,7 @@ glb_mobdefs[NUM_MOBS] =
     ATTR_NORMAL,
     30,
     0,
-    AI_NONE,
+    AI_STAYHOME,
     false,
     false,
     false,
@@ -569,12 +569,26 @@ const ATTR_DEF
 glb_attrdefs[NUM_ATTRS] =
 {
   {
+    0,
+    0,
+    0,
+    255,
+    255,
+    255,
+    COLOR_WHITE,
+    COLOR_BLACK,
+    false,
+  },
+  {
     128,
     0,
     0,
     255,
     255,
     255,
+    COLOR_WHITE,
+    COLOR_RED,
+    false,
   },
   {
     255,
@@ -583,6 +597,9 @@ glb_attrdefs[NUM_ATTRS] =
     0,
     0,
     0,
+    COLOR_BLACK,
+    COLOR_WHITE,
+    false,
   },
   {
     0,
@@ -591,6 +608,9 @@ glb_attrdefs[NUM_ATTRS] =
     32,
     128,
     255,
+    COLOR_CYAN,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -599,6 +619,9 @@ glb_attrdefs[NUM_ATTRS] =
     32,
     128,
     196,
+    COLOR_CYAN,
+    COLOR_BLACK,
+    false,
   },
   {
     0,
@@ -607,6 +630,9 @@ glb_attrdefs[NUM_ATTRS] =
     255,
     255,
     0,
+    COLOR_YELLOW,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -615,6 +641,9 @@ glb_attrdefs[NUM_ATTRS] =
     255,
     128,
     255,
+    COLOR_MAGENTA,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -623,6 +652,9 @@ glb_attrdefs[NUM_ATTRS] =
     192,
     192,
     192,
+    COLOR_WHITE,
+    COLOR_BLACK,
+    false,
   },
   {
     0,
@@ -631,6 +663,9 @@ glb_attrdefs[NUM_ATTRS] =
     64,
     64,
     64,
+    COLOR_BLACK,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -639,6 +674,9 @@ glb_attrdefs[NUM_ATTRS] =
     96,
     96,
     96,
+    COLOR_BLACK,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -647,6 +685,9 @@ glb_attrdefs[NUM_ATTRS] =
     255,
     255,
     255,
+    COLOR_WHITE,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -655,6 +696,9 @@ glb_attrdefs[NUM_ATTRS] =
     255,
     192,
     64,
+    COLOR_RED,
+    COLOR_BLACK,
+    false,
   },
   {
     0,
@@ -663,6 +707,9 @@ glb_attrdefs[NUM_ATTRS] =
     192,
     128,
     64,
+    COLOR_YELLOW,
+    COLOR_BLACK,
+    false,
   },
   {
     0,
@@ -671,6 +718,9 @@ glb_attrdefs[NUM_ATTRS] =
     0,
     255,
     0,
+    COLOR_GREEN,
+    COLOR_BLACK,
+    true,
   },
   {
     0,
@@ -679,6 +729,9 @@ glb_attrdefs[NUM_ATTRS] =
     0,
     128,
     0,
+    COLOR_GREEN,
+    COLOR_BLACK,
+    false,
   },
   {
     0,
@@ -687,5 +740,8 @@ glb_attrdefs[NUM_ATTRS] =
     64,
     64,
     255,
+    COLOR_BLUE,
+    COLOR_BLACK,
+    true,
   },
 };

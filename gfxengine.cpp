@@ -11,7 +11,20 @@
  */
 
 #include "gfxengine.h"
+
+#define USE_SDL
+
+#ifdef USE_SDL
 #include "gfx_sdl.h"
+#else
+#include "gfx_curses.h"
+#endif
+
+#ifdef USE_SDL
+#define INVOKEGFX(func) gfxsdl_##func
+#else
+#define INVOKEGFX(func) gfxcurses_##func
+#endif
 
 #include <iostream>
 #include <fstream>
@@ -24,22 +37,39 @@ u8	glbScreenCharMap[SCR_HEIGHT][SCR_WIDTH];
 int	glbScreenAttrMap[SCR_HEIGHT][SCR_WIDTH];
 bool	glbScreenDirty = false;
 
+// There is one true endian style.
+bool	glbEvilEndian = false;
+
 void
 gfx_init()
 {
-    gfxsdl_init();
+    INVOKEGFX(init)();
+
+    // Determine our endianness.
+    volatile unsigned	short	 s;
+    u8			*c;
+
+    s = 0;
+    c = (u8 *) &s;
+    *c = 1;
+
+    // The short will now either be 256 or 1.
+    if (s == 1)
+	glbEvilEndian = false;
+    else
+	glbEvilEndian = true;
 }
 
 void
 gfx_shutdown()
 {
-    gfxsdl_shutdown();
+    INVOKEGFX(shutdown)();
 }
 
 void
 gfx_delay(int frames)
 {
-    gfxsdl_delay(frames);
+    INVOKEGFX(delay)(frames);
 }
 
 void
@@ -94,7 +124,7 @@ gfx_update()
 {
     if (glbScreenDirty)
     {
-	gfxsdl_rebuildscreen();
+	INVOKEGFX(rebuildscreen)();
 	glbScreenDirty = false;
     }
 }
@@ -102,19 +132,19 @@ gfx_update()
 bool
 gfx_isKeyWaiting()
 {
-    return gfxsdl_isKeyWaiting();
+    return INVOKEGFX(isKeyWaiting)();
 }
 
 void
 gfx_clearKeyBuffer()
 {
-    gfxsdl_clearKeyBuffer();
+    INVOKEGFX(clearKeyBuffer)();
 }
 
 void
 gfx_breakKeyRepeat()
 {
-    gfxsdl_breakKeyRepeat();
+    INVOKEGFX(breakKeyRepeat)();
 }
 
 int
@@ -124,17 +154,60 @@ gfx_getKey(bool block)
     {
 	while (!gfx_isKeyWaiting())
 	{
-	    gfxsdl_awaitEvent();
+	    INVOKEGFX(awaitEvent)();
 	}
     }
-    return gfxsdl_getKey();
+    return INVOKEGFX(getKey)();
 }
 
 //
 // Bitmap loading code.
 // (Pre 7DRL)
 //
-#pragma pack(push, 1)
+
+static short
+gfx_readportableshort(istream &is)
+{
+    u8		c[2];
+    short	result;
+
+    is.read((char *) c, 2);
+
+    if (glbEvilEndian)
+    {
+	result = c[0] << 8;
+	result |= c[1];
+    }
+    else
+    {
+	result = c[0];
+	result |= c[1] << 8;
+    }
+    return result;
+}
+
+static int
+gfx_readportableint(istream &is)
+{
+    unsigned short	s1, s2;
+    int			result;
+
+    s1 = (unsigned short) gfx_readportableshort(is);
+    s2 = (unsigned short) gfx_readportableshort(is);
+
+    if (glbEvilEndian)
+    {
+	result = s1 << 16;
+	result |= s2;
+    }
+    else
+    {
+	result = s1;
+	result |= s2 << 16;
+    }
+
+    return result;
+}
 
 struct BMPHEAD
 {
@@ -150,12 +223,10 @@ struct BMPHEAD
     int	    comp;
     int	    imagesize;
     int	    xpelperm;
-    int	    ypelpm;
+    int	    ypelperm;
     int	    clrused;
     int	    clrimport;
 };
-
-#pragma pack(pop)
 
 struct RGBQUAD
 {
@@ -180,10 +251,32 @@ gfx_loadbitmap(const char *fname, int &w, int &h)
 	return 0;
     }
 
-    is.read((char *) &head, sizeof(BMPHEAD));
+    is.read(head.id, 2);
+    
+    head.size = gfx_readportableint(is);
+    head.reserved = gfx_readportableint(is);
+    head.headersize = gfx_readportableint(is);
+    head.infosize = gfx_readportableint(is);
+    head.width = gfx_readportableint(is);
+    head.depth = gfx_readportableint(is);
+    head.biplane = gfx_readportableshort(is);
+    head.bits = gfx_readportableshort(is);
+    head.comp = gfx_readportableint(is);
+    head.imagesize = gfx_readportableint(is);
+    head.xpelperm = gfx_readportableint(is);
+    head.ypelperm = gfx_readportableint(is);
+    head.clrused = gfx_readportableint(is);
+    head.clrimport = gfx_readportableint(is);
+
+    if (head.id[0] != 'B' && head.id[1] != 'M')
+    {
+	cerr << fname << " does not look like a bit map file!" << endl;
+	return 0;
+    }
 
     if (head.bits != 24 && head.bits != 8)
     {
+	cerr << "Error reading " << fname << endl;
 	cerr << "Head.bits is " << head.bits << endl;
 	cerr << "Cannot support non 24 or 8 bit colour bitmaps." << endl;
 	return 0;
