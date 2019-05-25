@@ -746,7 +746,8 @@ game::about
     http://www.zincland.com/7drl/liveonce
 
     It uses Simple DirectMedia Layer libraries to display to the
-    screen, whose home can be found at: http://www.libsdl.org/
+    screen, whose home can be found at: http://www.libsdl.org/  When
+    not using SDL, it uses curses.  One Windows, it uses PDCurses.
 
     Questions and comments can be posted to rec.games.roguelike.misc
     on USENET, or directly to the author at jmlait at zincland dot com.

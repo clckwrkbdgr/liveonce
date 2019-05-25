@@ -20,7 +20,3 @@ alphabet.bmp
 liveonce
 
 When these are all in the same directory, you can run it with ./liveonce!
-
-This is set up to build the SDL version.  To build the curses version,
-add the command -DUSE_CURSES to the Makefile.  Alternatively, use the
-macport version which is curses by default.

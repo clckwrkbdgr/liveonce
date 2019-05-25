@@ -4,6 +4,23 @@ Challenge.
 These changes are designed to increase interoperability and fix bugs,
 rather than expand the game in any way.  The game is, of course, done.
 
+Changes for 005
+
+- Curses nodelay set properly.
+- Backspace reported properly by curses.
+- Change SDL keyboard repeat to let you start repeating a different key 
+  before you release your previous key.
+- Build process for mac & linux made easier by adding moving of auxillary
+  files to the premake process
+- Windows Curses version now available thanks to PDCurses.  
+
+Changes for 003
+
+- Added support for Mac using Curses.
+- Renamed MSVC solution to liveonce from winport.
+
+Changes for 002
+
 - New AI type "Stay Home" which stays still if the mob is already at home.
   This is used by Kor Smith so he doesn't leave the forge, but can still get
   off the down staircase when you escape with him.
@@ -13,4 +30,3 @@ rather than expand the game in any way.  The game is, of course, done.
 - After saving the game and reloading, you can still escape from the dungeon.
 - Fix the bitmap loading to not depend on endianness or packing issues.
 - Added more diagnostic messages for SDL failures.
-- Renamed MSVC solution to liveonce from winport.

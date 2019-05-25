@@ -13,3 +13,5 @@ from the command line in the source root.
 This will generate the glbdef.h and glbdef.cpp files you need.
 
 Then, you can build using the solutions in this directory.
+If building your own solution or makefile, note you have to define
+WIN32.

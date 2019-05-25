@@ -12,7 +12,9 @@
 
 #include "gfxengine.h"
 
+#ifndef USE_CURSES
 #define USE_SDL
+#endif
 
 #ifdef USE_SDL
 #include "gfx_sdl.h"

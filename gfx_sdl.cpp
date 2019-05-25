@@ -38,6 +38,7 @@ int	 glbKeyQueueLen = 0;
 int	 glbKeyQueueSize = 0;
 
 int	 glbKeyPusher = 0;
+int	 glbKeyPusherRaw = 0;
 int	 glbKeyPushTime = 0;
 
 //
@@ -327,12 +328,21 @@ gfxsdl_pollEvents()
 		gfxsdl_putKey(key);
 		// Set the pusher.
 		glbKeyPusher = key;
+		glbKeyPusherRaw = event.key.keysym.sym;
 		glbKeyPushTime = gfxsdl_getframecount() + KEY_REPEAT_INITIAL;
 		break;
 
 	    case SDL_KEYUP:
 		// Stop the pusher.
-		glbKeyPusher = 0;
+		// Only do this if the raw pusher symbol matches this key
+		// up, preventing the keyboard repeat from being stopped
+		// by the previous key going high.
+		// We cannot use glbKeyPusher because unicode isn't cooked
+		// on a key up.
+		if (glbKeyPusherRaw == event.key.keysym.sym)
+		{
+		    glbKeyPusher = 0;
+		}
 		break;
 
 	    case SDL_QUIT:

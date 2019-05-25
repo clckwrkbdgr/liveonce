@@ -22,6 +22,19 @@
 
 #include "glbdef.h"
 
+// Window's colours are red/blue reversed.
+int glbWinLUT[8] =
+{
+    COLOUR_BLACK,
+    COLOUR_BLUE,
+    COLOUR_GREEN,
+    COLOUR_CYAN,
+    COLOUR_RED,
+    COLOUR_MAGENTA,
+    COLOUR_YELLOW,
+    COLOUR_WHITE
+};
+
 #undef COLOR_BLACK
 #undef COLOR_RED
 #undef COLOR_GREEN
@@ -38,6 +51,13 @@
 using namespace std;
 
 #include <assert.h>
+
+// Windows specific code
+#ifdef WIN32
+#include <windows.h>
+#define usleep(x) Sleep((x)/1000)
+#define sleep(x) Sleep((x))
+#endif
 
 #include <curses.h>
 
@@ -81,6 +101,10 @@ gfxcurses_cookkey(int curseskey)
 	    return GFX_KEYUP;
 	case KEY_DOWN:
 	    return GFX_KEYDOWN;
+	case 127:
+	case KEY_DL:
+	case KEY_BACKSPACE:
+	    return '\b';
     }
     
     return curseskey;
@@ -93,7 +117,7 @@ gfxcurses_init()
     start_color();
     cbreak();
     noecho();
-    nodelay(0, true);
+    nodelay(stdscr, true);
     intrflush(stdscr, false);
     keypad(stdscr, true);
 
@@ -101,7 +125,12 @@ gfxcurses_init()
     int		i;
     for (i = 0; i < NUM_ATTRS; i++)
     {
+#ifdef WIN32
+	init_pair(i, glbWinLUT[glb_attrdefs[i].fore], 
+		     glbWinLUT[glb_attrdefs[i].back]);
+#else
 	init_pair(i, glb_attrdefs[i].fore, glb_attrdefs[i].back);
+#endif
     }
 
     // Verify the terminal is valid.

@@ -1,9 +1,8 @@
 TARGET = liveonce
 
-OFILES = linuxport.o \
+OFILES = macport.o \
 	 ../gfxengine.o \
 	 ../gfx_curses.o \
-	 ../gfx_sdl.o \
 	 ../grammar.o \
 	 ../item.o \
 	 ../map.o \
@@ -17,12 +16,12 @@ OFILES = linuxport.o \
 	 ../glbdef.o
 
 .cpp.o:
-	g++ -O3 `sdl-config --cflags` -c $< -o $@
+	g++ -O3 -DUSE_CURSES -c $< -o $@
 
 all: $(TARGET)
 
 $(TARGET): $(OFILES)
-	g++ -O3 -o $(TARGET) $(OFILES) `sdl-config --libs` -lcurses
+	g++ -O3 -o $(TARGET) $(OFILES) -lcurses
 
 clean:
 	rm -f *.o

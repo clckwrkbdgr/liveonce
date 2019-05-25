@@ -166,3 +166,10 @@ If you want to use the excellent Mersenne Twister elsewhere, you are
 strongly recommended to get a new version from the official
 site rather than extracting this version, as this one may be out of
 date.
+
+---------- PDCurses License -------------------
+
+PDCurses is Public Domain, but one is encouraged to credit it where
+used.  You can find the original source and other platform's libraries
+at:
+http://pdcurses.sourceforge.net/
